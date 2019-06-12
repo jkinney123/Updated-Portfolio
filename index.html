@@ -18,12 +18,25 @@ $(document).ready(function(){
         window.location.hash = hash;
       });
     } 
-  });
-});
+     });
+    $("#index").click(function() {
+        $('.transform').toggleClass('transform-active');
+
+    });
+    $("#portfolio").click(function() {
+        $('.transform').toggleClass('transform-active');
+
+    });
+
+    $("#contact").click(function() {
+        $('.transform').toggleClass('transform-active');
+
+    });
+    });
 </script>
 </head>
 
-<body>
+<body class="bck-image">
 
   <header id="masthead">
     <div class="container">
@@ -38,7 +51,7 @@ $(document).ready(function(){
 
   <div id="index" class="container">
     <section class="main-section">
-      <h1>About Me</h1>
+      <h1 class="head-1">About Me</h1>
 
       <img src="assets/images/Portrait.jpg" class="auth-image" alt="Joe Kinney">
 
@@ -60,8 +73,8 @@ $(document).ready(function(){
 
 
   <div id="portfolio" class="container">
-    <section class="main-section port-sec">
-      <h1>Portfolio</h1>
+    <section class="port-section">
+      <h1 class="head-2" >Portfolio</h1>
 
       <div class="work">
         <img src="assets/images/guess.jpg" alt="Word Guess">
@@ -94,8 +107,8 @@ $(document).ready(function(){
   </div>
 
   <div id="contact" class="container">
-    <section class="main-section">
-      <h1>Contact</h1>
+    <section class="contact-section">
+      <h1 class="head-3">Contact</h1>
 
       <form id="contact-form">
         <ul>
