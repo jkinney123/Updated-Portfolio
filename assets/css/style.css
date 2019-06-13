@@ -57,7 +57,7 @@ body {
     border-bottom: 3px solid #868484;
     font-family: Georgia, Times, "Times New Roman", serif;
     font-weight: 700;
-    color: white;
+    color: black;
     text-align: center;
   }
   h1,
@@ -75,8 +75,7 @@ body {
   h2,
   h3 {
     font-family: Georgia, Times, "Times New Roman", serif;
-    font-weight: 700;
-    color: #4aaaa5;
+    
   }
   
   
@@ -84,6 +83,11 @@ body {
   h2,
   h3 {
     font-size: 22px;
+  }
+
+  .greetings {
+    text-align: center;
+    font-size: 50px;
   }
   
   
@@ -95,7 +99,9 @@ body {
     overflow: auto;
     color: #ffffff;
     background: #ffffff;
-    border-bottom: 2px solid #cccccc;
+    border-bottom: 2px solid #868686;
+    top: 0px;
+    left: 0px;
   }
   
   #logo {
@@ -137,21 +143,20 @@ body {
   footer {
     padding: 30px 0;
     clear: both;
-    font-size: 12px;
+    font-size: 20px;
     color: #ffffff;
-    color: #cccccc;
+    color: #000000;
     text-align: center;
-    background: #666666;
-    border-top: 8px solid #4aaaa5;
+    background: #fffefe;
+    border-top: 8px solid #000000;
     height: 50px;
+    position: relative;
+    top: 10px;
+    width: 100%;
+
   }
   
-  h3, h2 {
-    padding-bottom: 20px;
-    margin-bottom: 15px;
-    line-height: 22px;
-    border-bottom: 2px solid #eeeeee;
-  }
+  
   
 
   
@@ -173,21 +178,22 @@ body {
   .port-section {
     float: left;
     width: 100%;
-    max-width: 960px;
+    /* max-width: 1200px; */
     padding: 30px;
     margin: 0 0 40px;
-    background: #ffffff;
-    border: 1px solid #dddddd;
+    background: #efefef;
+    border: 5px solid #000000
   }
 
   .contact-section {
     float: left;
     width: 100%;
-    max-width: 960px;
+    /* max-width: 1200px; */
     padding: 30px;
     margin: 0 0 40px;
-    background: #ffffff;
-    border: 1px solid #dddddd;
+    background: #efefef;
+    border: 5px solid #000000;
+
 
   }
   
@@ -196,31 +202,52 @@ body {
     float: left;
     width: 274px;
     margin: 20px 0 25px;
-    overflow: auto;
+    overflow: hidden;
   }
   
   .work:nth-child(even) {
     margin-right: 40px;
   }
   
-  .work img {
+  .nutrition {
     width: 100%;
     border: 0 none;
     opacity: 0.8;
+    padding: 10;
+    height: 190px;
   }
-  
-  .work h3 {
-    position: absolute;
-    bottom: 20px;
+
+  .movie-trivia {
     width: 100%;
-    padding: 15px;
+    border: 0 none;
+    opacity: 0.8;
+    padding: 10;
+    height: 190px;
+  }
+
+  .crystalGame {
+    width: 100%;
+    border: 0 none;
+    opacity: 0.8;
+    padding: 10;
+    height: 190px;
+  }
+
+  
+  
+  .links {
+    position: absolute;
+    width: 100%;
+    bottom: .01;
+    padding: 1px;
     margin-bottom: 0;
     font-weight: 300;
     line-height: 30px;
     color: #ffffff;
     text-align: center;
-    background: #4aaaa5;
+    background: #000000;
     border-bottom: 0;
+
   }
   
   .auth-image {
@@ -272,8 +299,10 @@ body {
     font-size: 18px;
     color: #ffffff;
     cursor: pointer;
-    background: #4aaaa5;
+    background: #000000;
     border: 0 none;
+    position: relative;
+    left: 385px;
   }
   
   @media screen and (max-width: 980px) {
